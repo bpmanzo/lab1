@@ -6,9 +6,13 @@ selecteur{
 
 body {
     background-color: #FF9500;
-    background-image: url('http://pic.qiantucdn.com/58pic/12/95/10/88q58PICRc8.jpg!qt324');
+    background-image: url('https://cdn.thedesigninspiration.com/wp-content/uploads/2009/05/Blue-Pattern03.jpg');
+/*    background-size: cover;*/
     color: white;
     margin: 0;
+    font-family: helvetica;
+
+
 }
 
 #container {
@@ -18,13 +22,20 @@ body {
     box-shadow: 0px 0px 30px 2px rgba( 0, 0, 0, 0.95 );
 }
 
+.content-intro {
+  text-align: center;
+  color: black;
+
+}
+
 h1, h3 {
-    font-family: sans-serif;
+    font-family: Trebuchet MS;
+    text-align: center;
 }
 
 h3 {
-    margin-top: -15px;
-    color: lightgrey;
+    margin-top: 15px;
+    color: white;
     padding-bottom: 15px;
     border-bottom: solid 1px white;
 }
@@ -33,31 +44,106 @@ a {
     color: lightgrey;
 }
 
-img {
+/*img {
     width: 100%;
     border-radius: 10px;
+    margin: 0 auto;
+}*/
+
+/* photo slides */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.accordion {
+  width: 895px; height: 320px;
+  overflow: hidden;
+  box-shadow: 0 10px 6px -6px #111;
+  margin: 20px auto
+}
+.accordion ul { width: 200% }
+
+.accordion li {
+  position: relative;
+  display: block;
+  width: 160px;
+  float: left;
+  box-shadow: 0 0 30px 8px #222;
+  transition: all 0.4s ease .300ms;
 }
 
-.social-footer {
-  padding: 1rem;
-  background: #8a8a8a;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.accordion ul:hover li {width: 40px }
+.accordion ul li:hover {width: 640px }
+
+.caption {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;  
+  width: 640px
 }
 
-.social-footer .social-footer-icons .fa {
-  font-size: 1.3rem;
-  color: #fefefe;
+.caption a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font: normal 16px 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 15px;
+}
+/* slides end */
+
+
+#social-footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
 }
 
-.social-footer .social-footer-icons .fa:hover {
-  color: #4a4a4a;
-  transition: color 0.3s ease-in;
+#social-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#social-footer ul li {
+  display: inline;
+  padding: 0.4em;
+}
+
+#social-footer a {
+/*  color: #939393 !important; */
+  color: white !important;
+}
+
+.blacktext {
+  color: black;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: -80;
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #000;
+  opacity: 1;
+  z-index: 100;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+
+a.fa {
+  text-decoration: none
+}
+
+a:link {
+  text-decoration: none !important;
+  outline: 0;
+}
+
+
+.fa-stack {
+  margin: -2px;
 }
