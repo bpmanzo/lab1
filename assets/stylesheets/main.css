@@ -125,7 +125,11 @@ footer {
   width: 100vw;
   position: fixed;
   bottom: 0;
+<<<<<<< HEAD
   left: -45;
+=======
+  left: -50;
+>>>>>>> 8157e0606d6931c9763744e589c8dae32c8a8626
   padding: 1% 5%;
   text-align: center;
   background-color: #000;
